@@ -1,0 +1,66 @@
+.app {
+  text-align: center;
+
+  .app-header {
+    min-height: 10vh;
+    background-color: blueviolet;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .content-container {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    .skill-container {
+      .logo-container {
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+
+        .skill-logo {
+          height: 150px;
+          width: 150px;
+          pointer-events: none;
+        }
+      }
+
+      &:hover {
+        .skill-name {
+          color: greenyellow;
+          font-size: calc(20px + 2vmin);
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .skill-container:hover {
+    .logo-container {
+      animation: logo-spin infinite 20s linear;
+    }
+
+    .skill-name {
+      transition: color 2s, font-size 2s;
+    }
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "logo": "react.png",
+    "altText": "React",
+    "label": "React"
+  },
+  {
+    "logo": "redux.png",
+    "altText": "Redux",
+    "label": "Redux"
+  },
+  {
+    "logo": "javascript.png",
+    "altText": "Javascript",
+    "label": "Javascript"
+  },
+  {
+    "logo": "html5.png",
+    "altText": "HTML5",
+    "label": "HTML 5"
+  },
+  {
+    "logo": "css3.png",
+    "altText": "CSS3",
+    "label": "CSS 3"
+  },
+  {
+    "logo": "angular.png",
+    "altText": "Angular",
+    "label": "Angular"
+  },
+  {
+    "logo": "vue.png",
+    "altText": "Vue",
+    "label": "Vue JS"
+  }
+]
