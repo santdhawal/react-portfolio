@@ -1,25 +1,105 @@
+@import "colors.scss";
+
 .app {
   text-align: center;
+  background-color: $baseBackground;
+  min-height: 100vh;
 
   .app-header {
     min-height: 10vh;
-    background-color: blueviolet;
+    background-color: $headerBackground;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: $white;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
   }
 
-  .content-container {
-    background-color: #282c34;
+  .profile {
     min-height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    .photo-container {
+      padding: 20px;
+
+      .profile-photo {
+        width: 240px;
+        height: 230px;
+        border-radius: 115px;
+      }
+    }
+
+    .profile-summary {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+      .salutation {
+        color: $textGreen;
+
+        h1 {
+          margin: 0;
+          font-size: clamp(10px, 8vw, 20px);
+          font-weight: 300;
+        }
+      }
+
+      .name {
+        color: $textHeaderH2;
+
+        h2 {
+          font-size: clamp(40px, 8vw, 80px);
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+
+      .tag-line {
+        color: $textHeaderH3;
+
+        h3 {
+          margin: 0;
+          font-size: clamp(40px, 8vw, 80px);
+        }
+      }
+
+      .description {
+        color: $text;
+        font-size: clamp(10px, 8vw, 20px);
+        line-height: 30px;
+        margin-top: 20px;
+        text-align: left;
+
+        p {
+          margin: 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: $textGreen;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .content-container {
+    // background-color: #282c34;
+    // min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: $white;
 
     .skill-container {
       .logo-container {
@@ -36,7 +116,7 @@
 
       &:hover {
         .skill-name {
-          color: greenyellow;
+          color: $textGreen;
           font-size: calc(20px + 2vmin);
         }
       }
